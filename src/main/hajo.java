@@ -12,16 +12,20 @@ package main;
 public class hajo {
     int[] pozicio;
 
-    public hajo() {
-        pozicio = new int[]{2,4,3};
+    public hajo(int hely) {
+        pozicio = new int[]{hely,hely+1,hely+2};
     }
     
 public String talalat(int poz){
-    for (int i : pozicio) {
-        if (i == poz){
-            return "talált";
-        }
+    int i=0;
+    while (i<pozicio.length && poz!=pozicio[i]) {
+        i++;
     }
-    return "mellé";
+//    for (int i : pozicio) {
+//        if (i == poz){
+//            return "talált";
+//        }
+//    }
+    return !(i==pozicio.length) ? "talált" :"mellé";
 }
 }
