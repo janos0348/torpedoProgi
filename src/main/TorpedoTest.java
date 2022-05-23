@@ -7,7 +7,6 @@ public class TorpedoTest {
         new TorpedoTest().tesztLoves(4);
         System.out.println("Teszt");
         
-        assert 2==3 : "nem igaz";
         
     }
     public String tesztLoves (int poz){

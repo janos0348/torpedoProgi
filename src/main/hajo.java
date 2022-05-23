@@ -10,9 +10,18 @@ package main;
  * @author hallgato
  */
 public class hajo {
-    int[] pozicio = new int[3];
+    int[] pozicio;
+
+    public hajo() {
+        pozicio = new int[]{2,4,3};
+    }
     
 public String talalat(int poz){
-    return "";
+    for (int i : pozicio) {
+        if (i == poz){
+            return "talált";
+        }
+    }
+    return "mellé";
 }
 }
